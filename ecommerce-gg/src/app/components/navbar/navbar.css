@@ -1,38 +1,72 @@
+/* Container principale della navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  padding: 1rem 2rem;
+  justify-content: center; /* Centra il menu */
+  align-items: center; /* Allinea verticalmente */
+  background-color: #000; /* Sfondo nero */
+  padding: 16px 32px;
+  position: relative; /* Permette il posizionamento assoluto del brand */
 }
 
+/* Logo/brand della navbar */
+.navbar-brand {
+  position: absolute; /* Posizionamento assoluto */
+  left: 32px; /* Ancorato a sinistra */
+}
+
+/* Stile del link del brand */
 .navbar-brand a {
-  color: #fff;
-  font-size: 1.5rem;
+  color: #fff; /* Testo bianco */
+  font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none; /* Rimuove sottolineatura */
 }
 
+/* Lista del menu */
 .navbar-menu {
   display: flex;
-  list-style: none;
+  list-style: none; /* Rimuove i pallini */
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  gap: 32px; /* Spaziatura tra le voci */
 }
 
+/* Link del menu */
 .navbar-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  color: #fff; /* Testo bianco */
+  text-decoration: none; /* Rimuove sottolineatura */
+  font-size: 16px;
+  transition: color 0.3s ease; /* Transizione fluida al hover */
 }
 
+/* Effetto hover sui link */
 .navbar-menu li a:hover {
-  color: #ccc;
+  color: #ccc; /* Grigio chiaro al passaggio del mouse */
 }
 
+/* Link attivo */
 .navbar-menu li a.active {
-  color: #ccc;
-  border-bottom: 2px solid #fff;
+  color: #ccc; /* Grigio chiaro */
+  border-bottom: 2px solid #fff; /* Sottolineatura bianca */
+}
+
+/* Container icone utente e carrello */
+.navbar-icons {
+  position: absolute; /* Posizionamento assoluto */
+  right: 32px; /* Ancorato a destra */
+  display: flex;
+  gap: 20px; /* Spaziatura tra le icone */
+}
+
+/* Stile link icone */
+.navbar-icons .icon-link {
+  color: #fff; /* Icone bianche */
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transizione fluida al hover */
+}
+
+/* Effetto hover sulle icone */
+.navbar-icons .icon-link:hover {
+  color: #ccc; /* Grigio chiaro al passaggio del mouse */
 }

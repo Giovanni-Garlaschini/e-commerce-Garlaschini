@@ -1,16 +1,36 @@
+<!-- Barra di navigazione principale -->
 <nav class="navbar">
+  <!-- Logo/Brand del sito -->
   <div class="navbar-brand">
     <a routerLink="/home">Vinyl Store</a>
   </div>
+
+  <!-- Menu di navigazione -->
   <ul class="navbar-menu">
     <li>
+      <!-- Link alla pagina Home con evidenziazione attiva -->
       <a routerLink="/home" routerLinkActive="active">Home</a>
     </li>
     <li>
+      <!-- Link alla pagina Shop con evidenziazione attiva -->
       <a routerLink="/shop" routerLinkActive="active">Shop</a>
     </li>
     <li>
+      <!-- Link alla pagina Contatti con evidenziazione attiva -->
       <a routerLink="/contatti" routerLinkActive="active">Contatti</a>
     </li>
   </ul>
+
+  <!-- Icone utente | desideri | carrello -->
+  <div class="navbar-icons">
+    <a href="#" class="icon-link">
+      <i class="bi bi-person-fill"></i>
+    </a>
+    <a href="#" class="icon-link">
+      <i class="bi bi-bag-heart-fill"></i>
+    </a>
+    <a href="#" class="icon-link">
+      <i class="bi bi-cart-fill"></i>
+    </a>
+  </div>
 </nav>
